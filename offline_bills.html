@@ -47961,6 +47961,30 @@
                   }
 
                 }
+                if ((localStorage.getItem("unsaved"))) {
+                  var whole = [];
+                  var length = JSON.parse(localStorage.getItem("unsaved")).length;
+                  //alert(length);
+                  whole = JSON.parse(localStorage.getItem("unsaved"));
+                  var lenhj = length - 1;
+
+                  for (var i = lenhj; i >= 0; i--) {
+
+                    var l = whole[i].length;
+
+                    var bill_id = "unsaved";
+                    var sales_man = whole[0][0];
+                    var date = whole[0][3];
+                    var tr = "<tr><td>" + date + "</td><td>" + bill_id + "</td><td>" + sales_man +
+                      "</td><td><a href ='unsaved.html'><button class='btn btn-primary' >EDIT</button></a><button class='btn btn-danger' onclick='deleteUnsaved()' >DELETE</button></td></tr>";
+                    $(".odd").remove();
+                    $("tbody").append(tr);
+
+
+
+
+                  }
+                }
                 if ((localStorage.getItem("prac"))) {
                   var whole = [];
                   var length = JSON.parse(localStorage.getItem("prac")).length;
@@ -47990,30 +48014,7 @@
                   }
                 }
 
-                if ((localStorage.getItem("unsaved"))) {
-                  var whole = [];
-                  var length = JSON.parse(localStorage.getItem("unsaved")).length;
-                  //alert(length);
-                  whole = JSON.parse(localStorage.getItem("unsaved"));
-                  var lenhj = length - 1;
-
-                  for (var i = lenhj; i >= 0; i--) {
-
-                    var l = whole[i].length;
-
-                    var bill_id = "unsaved";
-                    var sales_man = whole[0][0];
-                    var date = whole[0][3];
-                    var tr = "<tr><td>" + date + "</td><td>" + bill_id + "</td><td>" + sales_man +
-                      "</td><td><a href ='unsaved.html'><button class='btn btn-primary' >EDIT</button></a><button class='btn btn-danger' onclick='deleteUnsaved()' >DELETE</button></td></tr>";
-                    $(".odd").remove();
-                    $("tbody").append(tr);
-
-
-
-
-                  }
-                }
+               
               </script>
 
 
