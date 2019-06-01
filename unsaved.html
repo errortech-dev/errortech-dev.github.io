@@ -894,10 +894,10 @@ table, th, td {
                         </label>
                         <label style="text-align:left" for="adress" class="control-label col-md-6 col-sm-6 col-xs-6">Address</label>
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                          <input type="text" id="name" required="required" class="form-control ">
+                          <input type="text" id="name" oninput="update()" required="required" class="form-control ">
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                          <input id="adress" class="form-control col-md-7 col-xs-6" type="text" name="adress">
+                          <input id="adress" oninput="update()" class="form-control col-md-7 col-xs-6" type="text" name="adress">
                         </div>
                       </div>
                      
@@ -907,10 +907,10 @@ table, th, td {
                         <label style="text-align:left" class="control-label col-md-6 col-sm-6 col-xs-6">Date <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                          <input id="phone" class="form-control col-md-6 col-xs-6" type="text" name="phone">
+                          <input id="phone" oninput="update()" class="form-control col-md-6 col-xs-6" type="text" name="phone">
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                          <input id="date" class="date-picker form-control " required="required" type="date">
+                          <input id="date" oninput="update()" class="date-picker form-control " required="required" type="date">
                         </div>
                       </div>
                       <div class="form-group">
@@ -919,7 +919,7 @@ table, th, td {
                         	<label style="text-align:left" for="vehicle" class="control-label ">Vehicle No</label>
                         
                         </label>
-                          <input id="vehicle" class="form-control " type="text" name="vehicle">
+                          <input id="vehicle" oninput="update()" class="form-control " type="text" name="vehicle">
                         </div>
                         
                       </div>
