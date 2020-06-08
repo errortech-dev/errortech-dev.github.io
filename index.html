@@ -15,6 +15,12 @@
     <title> NAVKAR </title>
 
     <link rel = "icon" type = "image/png"  href = "image/1.jpg">
+    <link rel = "manifest" href = "manifest.json">
+
+  
+
+   
+
 
     
    
@@ -665,14 +671,17 @@ table, th, td {
     color:black;
 }
 
+@media  (max-width:668px){
+    .imgRes{
+        width:90%;
+    }
+}
 </style>
-<link rel="manifest" href="/manifest.json">
+ <link rel="manifest" href="/manifest.json">
   </head>
 
   <body class="nav-md">
-
-      <script src="includesw.js"></script>
-
+     <script src="includesw.js"></script>
       <button class="add-button">Add to home screen</button>
     <div class="container body">
       <div class="main_container">
@@ -708,8 +717,8 @@ table, th, td {
                 <!--<h3>General</h3>-->
                      <ul class="nav side-menu">
                  
-                  <li><a href="index.html" ><i class="fa fa-clone"></i> Home </a></li>
-                 <li><a href="index1.html" ><i class="fa fa-clone"></i> Generate bill </a>
+                  <li><a href="index2.html" ><i class="fa fa-clone"></i> Home </a></li>
+                 <li><a href="practice1.html" ><i class="fa fa-clone"></i> Generate bill </a>
                    
                   </li>
                   <li><a href="offline_bills.html" ><i class="fa fa-clone"></i> Offline bills  </a>
@@ -794,16 +803,15 @@ table, th, td {
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
               
-                   <div class="container">
-                     <div class="text-center">
+                   
                     
-                  <div class="x_content center_img">
+                  <div class="x_content" style="text-align:center">
                     <br />
                     
-                     <img src="unnamed.png" alt="Girl in a jacket" style="height:auto;align:center;max-width:100%">
+                     <img src="images/unnamed.png" alt="Navakar" class="imgRes">
                      
                   </div>
-                </div></div>
+            
             </div>
 
        
@@ -6198,7 +6206,17 @@ function calculateArea(){
       }
   </script>
   <script>
-
+if ('serviceWorker' in navigator) {
+    //alert();
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('sw.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+  
+ }
  
  let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
