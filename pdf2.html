@@ -110,7 +110,7 @@ font-size:20px;
     var len=JSON.parse(localStorage.getItem("unsaved")).length;
     var n=localStorage.getItem('row');
     localStorage.removeItem("row");
-
+    console.log(n);
    // var n=len-1;
     var array=[];
     var final=[];
@@ -125,7 +125,7 @@ font-size:20px;
     var d=0;
     final=JSON.parse(localStorage.getItem("unsaved"))[n];
     
-   
+   console.log(final);
     var name12=final[0];
       var adress=final[1];
       var phone=final[2];
