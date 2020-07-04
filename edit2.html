@@ -6185,8 +6185,13 @@ function calculateArea(){
           var date = $("#date").val();
           var vehicle = $("#vehicle").val();
           var con = document.getElementById('selecto').value;
-         // var pra = [name, adress, phone, date, con, vehicle];
-        var pra=[name,adress,phone,date,con,vehicle];
+          var refer="";
+           var load="";
+            var aprvd="";
+             var sales="";
+             var less=3;
+             // var pra = [name, adress, phone, date, con, vehicle];
+       var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
           for (var g = 1; g <= t; g++) {
 
             var item_name = $("#ty" + g).val();
