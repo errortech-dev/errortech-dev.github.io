@@ -5706,7 +5706,7 @@ calculateArea();
         }
         function addRow(){
                 for(var h=1;h<=t;h++){
-          var name=$("#ty"+h).text();
+          var name=$("#ty"+h).val();
           if(name==""){
             alert("item"+h+ " name is empty");
           }
@@ -6312,7 +6312,7 @@ var name="";
 var l=JSON.parse(localStorage.getItem("unsaved")).length;
 
 final=JSON.parse(localStorage.getItem("unsaved"))[id];
-//console.log(final);
+console.log(final);
 var name3=final[0];
 
 var adress=final[1];
