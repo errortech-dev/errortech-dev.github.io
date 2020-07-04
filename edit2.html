@@ -6188,9 +6188,10 @@ function calculateArea(){
      if(localStorage.getItem("unsaved")){
       
        prac = JSON.parse(localStorage.getItem("unsaved"));
+       console.log(prac);
      }
      
-      prac.push(pra);
+      //prac.push(pra);
      localStorage.setItem("unsaved",JSON.stringify(prac));
 
 
