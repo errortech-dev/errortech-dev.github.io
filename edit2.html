@@ -6263,10 +6263,9 @@ function calculateArea(){
             //console.log(prac[0]);
             //alert("2");
           }
-          console.log(prac);
-          console.log(prac[0]);
-          console.log(id);
-          prac.push(pra);
+         
+         
+          prac[id].push(pra);
           localStorage.setItem("unsaved", JSON.stringify(prac));
            /*var prac=[];
      if(localStorage.getItem("unsaved")){
@@ -6298,7 +6297,7 @@ function calculateArea(){
 
           /* alert(prac);*/
           //localStorage.removeItem('unsaved');
-          //window.location.href = "pdf2.html";
+          window.location.href = "pdf2.html";
 
 
 
@@ -6395,7 +6394,7 @@ function calculateArea(){
           //alert("1");
           var prac = [];
 
-          prac.push(pra);
+          prac[id].push(pra);
           localStorage.setItem("unsaved", JSON.stringify(prac));
 
 
