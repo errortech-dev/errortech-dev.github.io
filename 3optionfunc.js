@@ -1057,7 +1057,7 @@ function test() {
            
           var x="";
           var sno = $("#ty"+g+"s"+f).text();
-          alert(sno);
+          
          var  l=$("#ty"+g+"l"+f).val();
         var  w=$("#ty"+g+"w"+f).val();
      var  l1=$("#ty"+g+"l1-"+f).val();
@@ -1093,7 +1093,7 @@ function test() {
         elem++;
             item_name=item_name.replace(/,/g, "``");
            x+=item_name+"-"+l+"-"+w+"-"+l1+"-"+w1+"-"+l2+"-"+w2+"-"+l3+"-"+w3+"-"+are+"-"+total+"-"+lot_id+"-"+sno;
-
+           alert(x);
            console.log(x);
             array[elem-1]=x;
             
