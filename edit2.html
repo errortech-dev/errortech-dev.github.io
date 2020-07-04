@@ -5915,6 +5915,11 @@ function calculateArea(){
            
          
            $("#ty"+g+"a"+f).text(conare);
+           tot=Number($("#ty"+g+"a"+f).text());
+           if(tot !='' && tot!=0){
+           totNew+=Number(tot);
+           $("#tyt"+g).text("TOTAL:"+totNew.toFixed(2));
+           }
            
        }
               }
