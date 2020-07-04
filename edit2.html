@@ -6260,10 +6260,11 @@ function calculateArea(){
           } else {
              prac = [];
             prac = JSON.parse(localStorage.getItem('unsaved'));
-            console.log(prac[0]);
+            //console.log(prac[0]);
             //alert("2");
           }
           console.log(prac);
+          console.log(prac[0]);
           prac.push(pra);
           localStorage.setItem("unsaved", JSON.stringify(prac));
            /*var prac=[];
@@ -6322,7 +6323,13 @@ function calculateArea(){
           var date = $("#date").val();
           var vehicle = $("#vehicle").val();
           var con = document.getElementById('selecto').value;
-          var pra = [name, adress, phone, date, con, vehicle];
+          var refer="";
+           var load="";
+            var aprvd="";
+             var sales="";
+             var less=3;
+             // var pra = [name, adress, phone, date, con, vehicle];
+       var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
 
           for (var g = 1; g <= t; g++) {
 
