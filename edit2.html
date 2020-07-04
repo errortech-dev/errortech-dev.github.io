@@ -6166,18 +6166,18 @@ function calculateArea(){
           }
           //alert(array);
           pra.push(array);
-          if (!(localStorage.getItem('prac'))) {
+          if (!(localStorage.getItem('unsaved'))) {
 
             //alert("1");
             var prac = [];
           } else {
             var prac = [];
-            prac = JSON.parse(localStorage.getItem('prac'));
+            prac = JSON.parse(localStorage.getItem('unsaved'));
             //alert("2");
           }
 
           prac.push(pra);
-          localStorage.setItem("prac", JSON.stringify(prac));
+          localStorage.setItem("unsaved", JSON.stringify(prac));
 
 
 
@@ -6309,9 +6309,9 @@ var $all=[];
 var name="";
 //print_r($data);
 //$name=$data[1];
-var l=JSON.parse(localStorage.getItem("prac")).length;
+var l=JSON.parse(localStorage.getItem("unsaved")).length;
 
-final=JSON.parse(localStorage.getItem("prac"))[id];
+final=JSON.parse(localStorage.getItem("unsaved"))[id];
 var name3=final[0];
 
 var adress=final[1];
