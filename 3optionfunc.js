@@ -1159,3 +1159,7 @@ function test() {
 
       
   }
+
+  window.onbeforeunload = function(){
+  alert( 'Are you sure you want to leave?');
+};
