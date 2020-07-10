@@ -1053,6 +1053,7 @@ function test() {
      else{
          var total=to;
      }
+      alert("ASSSS OUTSIDE");
       if(item_name!=""){
           
         for(var f=0;f<c;f++){
