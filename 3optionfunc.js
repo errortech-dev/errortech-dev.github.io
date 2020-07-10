@@ -1109,6 +1109,7 @@ function test() {
      }
      //alert(array);
      pra.push(array);
+     console.log(array);
        pra.push("NO");
      
        var prac=[];
