@@ -890,7 +890,7 @@ function test() {
      }
      
       if(item_name!=""){
-          
+          alert("submit");
         for(var f=0;f<c;f++){
            
           var x="";
@@ -1137,7 +1137,7 @@ function test() {
      console.log(JSON.parse(localStorage.getItem("unsaved"))[timestamp]);
 
 
-     
+
 
     /* bill.push(array);
      if(!(localStorage.getItem('bills'))){
