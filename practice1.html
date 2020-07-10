@@ -5916,14 +5916,14 @@ var t=1;
         }
     }
          function myfun(id){
-         	alert(id);
+         	
         	var x=id.id;
         	x=x.split("-")[1];	
         	var rowid=$(id).closest('tr').index();	
         	alert("row "+rowid);	
             var sno=document.getElementById("myTable").rows[rowid].cells[0].innerHTML;
             sno++;
-        	var markup = $('<tr id="row-'+c+'"><td contenteditable="true" id="ty'+t+'s'+c+'" oninput="update()">'+sno+'</td> <td  ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td  ><input oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
+        	var markup = $('<tr id="row-'+c+'"><td contenteditable="true" id="ty'+t+'s'+c+'" oninput="update()">'+rowid+'</td> <td  ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td  ><input oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
         	    markup.insertBefore($('#myTable tbody tr:nth('+rowid+')'));
         	    c++;
         }
