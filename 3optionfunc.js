@@ -1026,16 +1026,15 @@ function test() {
      var vehicle=$("#vehicle").val();
      var less=3;
      var con=document.getElementById('selecto').value;
-     alert("1");
-     alert(event.target.id);
+     
      if(!(event.target.id=="name"||event.target.id=="ty1"||event.target.id=="lot1"||event.target.id=="adress"||event.target.id=="phone"||event.target.id=="date"||event.target.id=="refer"||event.target.id=="load"||event.target.id=="aprvd"||event.target.id=="sales"||event.target.id=="vehicle")){
      if(name == ""|| $('#ty1').text()==""|| $('#lot1').text()=="")
      {
        //alert("Enter name, colour and lotID");
      }
-     alert("3");
+     
      if(clr<len){
-      alert("2");
+     
                $("#ty"+t).css("background-color", "skyblue");
                // alert('please fill Color');
                return;
@@ -1047,7 +1046,7 @@ function test() {
            }
      }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
-     alert("4");
+    
      for(var g=1;g<=t;g++){
 
       var item_name=$("#ty"+g).text();
@@ -1060,7 +1059,7 @@ function test() {
      else{
          var total=to;
      }
-      alert("ASSSS OUTSIDE");
+     
       if(item_name!=""){
           
         for(var f=0;f<c;f++){
@@ -1103,7 +1102,7 @@ function test() {
         elem++;
             item_name=item_name.replace(/,/g, "``");
            x+=item_name+"-"+l+"-"+w+"-"+l1+"-"+w1+"-"+l2+"-"+w2+"-"+l3+"-"+w3+"-"+are+"-"+total+"-"+lot_id+"-"+sno;
-           alert("ASSSS"+x);
+           
             array[elem-1]=x;
 
             }
