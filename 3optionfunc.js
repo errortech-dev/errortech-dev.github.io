@@ -866,13 +866,13 @@ function test() {
      {
       //  alert("Enter name, colour and lotID");
      }
-     alert("submit bloked ");
+     
      if(clr<len){
                $("#ty"+t).css("background-color", "skyblue");
                // alert('please fill Color');
            }
            else if(lid<len){
-            alert("save bloked ouututututtutt");
+            
             $("#lot"+t).css("background-color", "skyblue");
             // alert('please fill LOTID');
            }
@@ -1035,18 +1035,18 @@ function test() {
      {
        //alert("Enter name, colour and lotID");
      }
-     alert("save bloked");
+     
      if(clr<len){
-        alert("save bloked INNNNNNNNN");
+        
                $("#ty"+t).css("background-color", "skyblue");
                // alert('please fill Color');
-               return;
+               //return;
            }
            else if(lid<len){
-            alert("save bloked ouututututtutt");
+           
             $("#lot"+t).css("background-color", "skyblue");
              // alert('please fill LOTID');
-             return;
+             //return;
            }
      }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
@@ -1065,7 +1065,7 @@ function test() {
      }
      
       if(item_name!=""){
-           alert("saved");
+          
         for(var f=0;f<c;f++){
            
           var x="";
@@ -1137,7 +1137,7 @@ function test() {
      
      localStorage.setItem("unsaved",JSON.stringify(prac));
       localStorage.setItem("row",timestamp);
-     console.log(JSON.parse(localStorage.getItem("unsaved"))[timestamp]);
+     
 
 
 
