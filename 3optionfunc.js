@@ -1008,7 +1008,7 @@ function test() {
 
                 var b=Number(a);
                  sum+=b;
-                 console.log("ASSSS"+sum);
+
              }
               var totalar= sum.toFixed(2);
       
@@ -1095,7 +1095,7 @@ function test() {
         elem++;
             item_name=item_name.replace(/,/g, "``");
            x+=item_name+"-"+l+"-"+w+"-"+l1+"-"+w1+"-"+l2+"-"+w2+"-"+l3+"-"+w3+"-"+are+"-"+total+"-"+lot_id+"-"+sno;
-           
+           alert("ASSSS"+x);
             array[elem-1]=x;
 
             }
