@@ -1112,7 +1112,7 @@ function test() {
      console.log(array);
        pra.push("NO");
      
-       var prac=[];
+       var prac={};
      if(localStorage.getItem("unsaved")){
        prac = JSON.parse(localStorage.getItem("unsaved"));
      }
