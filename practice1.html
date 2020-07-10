@@ -926,9 +926,9 @@ table, th, td {
                         <tr id='row-0'>
                         	<td style="width:2%" contenteditable="true" id="ty1s0">1/</td>
                          
-                          <td  style="width:11%;"   ><input oninput="update()"  id="ty1l0" style="width:100%;text-align:center;" type="number" onkeyup="update()"></td>
+                          <td  style="width:11%;"   ><input oninput="update()"  id="ty1l0" style="width:100%;text-align:center;" type="number" onkeyup="areac()"></td>
                           <th style="width:2%"  > X </th>
-                          <td  style="width:11%"   ><input oninput="update()"  id="ty1w0" style="width:100%;text-align:center;" type="number" onkeyup="update()"></td>
+                          <td  style="width:11%"   ><input oninput="update()"  id="ty1w0" style="width:100%;text-align:center;" type="number" onkeyup="areac()"></td>
                           <td  style="width:9%" ><input oninput="update()"  style="width:100%;text-align:center;" id="ty1l1-0"  onkeyup="areac()"  type="number"></td>
                           <th style="width:2%"  > X </th>
                            <td  style="width:9%"    ><input oninput="update()"  style="width:100%;text-align:center;" id="ty1w1-0"  onkeyup="areac()" type="number"></td>
@@ -5942,7 +5942,7 @@ var t=1;
   </script>
   <script>
       function areac(){
-      	alert("hai");
+      	
         document.getElementById("selecto").disabled=true;
           for(var g=1;g<=t;g++){
           	var totNew=0;
