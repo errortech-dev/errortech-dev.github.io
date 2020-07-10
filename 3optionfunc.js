@@ -980,7 +980,9 @@ function test() {
       
   }
   function update(){
+    alert("BEGORE");
     areac();
+    alert("AFTER");
         var array = new Array(c);
         var elem=0;
         //check if item name is not empty
