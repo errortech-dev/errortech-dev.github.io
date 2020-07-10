@@ -1095,14 +1095,8 @@ function test() {
            x+=item_name+"-"+l+"-"+w+"-"+l1+"-"+w1+"-"+l2+"-"+w2+"-"+l3+"-"+w3+"-"+are+"-"+total+"-"+lot_id+"-"+sno;
            
             array[elem-1]=x;
-            
-      
-          
-         
 
-
-
-}
+            }
 
 
         }
@@ -1128,7 +1122,7 @@ function test() {
      
      
      localStorage.setItem("unsaved",JSON.stringify(prac));
-
+     console.log(JSON.parse(localStorage.getItem("unsaved"))[timestamp]);
 
 
 
