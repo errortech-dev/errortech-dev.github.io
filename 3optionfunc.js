@@ -890,7 +890,7 @@ function test() {
      }
      
       if(item_name!=""){
-          alert("submit");
+         
         for(var f=0;f<c;f++){
            
           var x="";
@@ -1062,7 +1062,7 @@ function test() {
      }
      
       if(item_name!=""){
-          
+           alert("saved");
         for(var f=0;f<c;f++){
            
           var x="";
