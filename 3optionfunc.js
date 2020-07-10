@@ -1035,12 +1035,13 @@ function test() {
      }
      alert("save bloked");
      if(clr<len){
-     
+        alert("save bloked INNNNNNNNN");
                $("#ty"+t).css("background-color", "skyblue");
                // alert('please fill Color');
                return;
            }
            else if(lid<len){
+            alert("save bloked ouututututtutt");
             $("#lot"+t).css("background-color", "skyblue");
              // alert('please fill LOTID');
              return;
