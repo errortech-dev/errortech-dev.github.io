@@ -1160,6 +1160,6 @@ function test() {
       
   }
 
-  window.onunload = function(){
-  alert( 'Are you sure you want to leave?');
+  window.onbeforeunload  = function(){
+  rerurn 'Are you sure you want to leave?';
 };
