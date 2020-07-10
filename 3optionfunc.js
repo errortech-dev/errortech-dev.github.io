@@ -1005,8 +1005,10 @@ function test() {
            
              for(var h=0;h<c;h++){
                  var a=$("#ty"+t+"a"+h).text();
+
                 var b=Number(a);
                  sum+=b;
+                 console.log("ASSSS"+sum);
              }
               var totalar= sum.toFixed(2);
       
