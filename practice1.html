@@ -6381,9 +6381,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 </script>
 <script>
-	 window.onbeforeunload  = function(){
-	 	confirm("are you sure? ");
-  
-};
+	 window.onbeforeunload  = check;
+	 function check(){
+	 	confirm("okok");
+	 	
+	 }
 	</script>
 </html>
