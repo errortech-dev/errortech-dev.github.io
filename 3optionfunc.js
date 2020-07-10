@@ -1033,7 +1033,7 @@ function test() {
      {
        //alert("Enter name, colour and lotID");
      }
-     
+     alert("save bloked");
      if(clr<len){
      
                $("#ty"+t).css("background-color", "skyblue");
