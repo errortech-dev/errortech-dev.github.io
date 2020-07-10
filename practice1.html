@@ -924,7 +924,7 @@ table, th, td {
                           
                         </tr>
                         <tr id='row-0'>
-                        	<td style="width:2%" contenteditable="true" id="ty1s0">1/</td>
+                        	<td style="width:2%" contenteditable="true" id="ty1s0" oninput="update()">1/</td>
                          
                           <td  style="width:11%;"   ><input oninput="update()"  id="ty1l0" style="width:100%;text-align:center;" type="number" onkeyup="areac()"></td>
                           <th style="width:2%"  > X </th>
@@ -5942,7 +5942,7 @@ var t=1;
   </script>
   <script>
       function areac(){
-      	
+
         document.getElementById("selecto").disabled=true;
           for(var g=1;g<=t;g++){
           	var totNew=0;
