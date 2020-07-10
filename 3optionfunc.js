@@ -981,7 +981,7 @@ function test() {
   }
   function update(){
     areac();
-        var array = new Array(c-cancel);
+        var array = new Array(c);
         var elem=0;
         //check if item name is not empty
         var sum=0;
