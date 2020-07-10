@@ -1026,7 +1026,7 @@ function test() {
      var vehicle=$("#vehicle").val();
      var less=3;
      var con=document.getElementById('selecto').value;
-     
+     alert("2");
      if(!(event.target.id=="name"||event.target.id=="ty1"||event.target.id=="lot1"||event.target.id=="adress"||event.target.id=="phone"||event.target.id=="date"||event.target.id=="refer"||event.target.id=="load"||event.target.id=="aprvd"||event.target.id=="sales"||event.target.id=="vehicle")){
      if(name == ""|| $('#ty1').text()==""|| $('#lot1').text()=="")
      {
