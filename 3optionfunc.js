@@ -982,7 +982,7 @@ function test() {
   function update(){
     
     areac();
-    
+
         var array = new Array(c);
         var elem=0;
         //check if item name is not empty
@@ -1004,7 +1004,7 @@ function test() {
                }
                
            }
-           alert("AFTER");
+           
              for(var h=0;h<c;h++){
                  var a=$("#ty"+t+"a"+h).text();
 
@@ -1013,7 +1013,7 @@ function test() {
 
              }
               var totalar= sum.toFixed(2);
-      
+      alert("1");
      var item_nm="";
      var name=$("#name").val();
      var adress=$("#adress").val();
@@ -1026,11 +1026,13 @@ function test() {
      var vehicle=$("#vehicle").val();
      var less=3;
      var con=document.getElementById('selecto').value;
+     alert("2");
      if(!(event.target.id=="name"||event.target.id=="ty1"||event.target.id=="lot1"||event.target.id=="adress"||event.target.id=="phone"||event.target.id=="date"||event.target.id=="refer"||event.target.id=="load"||event.target.id=="aprvd"||event.target.id=="sales"||event.target.id=="vehicle")){
      if(name == ""|| $('#ty1').text()==""|| $('#lot1').text()=="")
      {
        //alert("Enter name, colour and lotID");
      }
+     alert("3");
      if(clr<len){
                $("#ty"+t).css("background-color", "skyblue");
                // alert('please fill Color');
@@ -1043,6 +1045,7 @@ function test() {
            }
      }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
+     alert("4");
      for(var g=1;g<=t;g++){
 
       var item_name=$("#ty"+g).text();
