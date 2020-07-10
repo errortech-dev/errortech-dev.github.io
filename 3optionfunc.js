@@ -866,11 +866,13 @@ function test() {
      {
       //  alert("Enter name, colour and lotID");
      }
+     alert("submit bloked ");
      if(clr<len){
                $("#ty"+t).css("background-color", "skyblue");
                // alert('please fill Color');
            }
            else if(lid<len){
+            alert("save bloked ouututututtutt");
             $("#lot"+t).css("background-color", "skyblue");
             // alert('please fill LOTID');
            }
