@@ -6666,6 +6666,7 @@ if(less==3){
                         aaa.reverse();
                         //arr.sort();
                         var i = 0;
+                        var ttl =0;
                         for(var j in aaa){
                               i = aaa[j];
                               total=0;
@@ -6678,6 +6679,10 @@ if(less==3){
                                 var str1=arr[i][11];
                                 str1=str1.toString();
                                 var data=str1.split(",");
+                               alert(data);
+                               var pp = data[0].split("-");
+                               ttl+=Number(d[d.length-3]);
+                               alert(ttl)
                                 for(var k=0;k<data.length;k++){
                                 	var d=data[k].split("-");
                                 	//total=total+Number(d[d.length-3]);
