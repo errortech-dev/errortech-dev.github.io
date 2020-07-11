@@ -5657,6 +5657,7 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
             
          }
 });*/
+var cancel=0;
       function copyRow(){
         //check is there any rows in that item
         if(count>0){
@@ -5735,7 +5736,7 @@ calculateArea();
               var z=t;
            t++;
           
-            var item = '<tr style="height:30px"><td id="tyt'+z+'"colspan="14">TOTAL:'+totalar+'</td></tr><tr><th colspan="6" style="height:50px">Colour</th><th colspan="8"   ><input oninput="update()" id="ty'+t+'"></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td contenteditable="true"  id="ty'+t+'s'+c+'">1/</td> <td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number"  onKeyPress="enter1(this)" onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td  ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter2(this)" onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter3(this)" onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td  ><input oninput="update()"  style="width:100%;text-align:center;"type="number"  onKeyPress="enter4(this)" onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter5(this)" onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter6(this)" onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter7(this)"  onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td   ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter8(this)" onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
+            var item = '<tr style="height:30px"><td id="tyt'+z+'"colspan="7">TOTAL:'+totalar+'</td><td colspan="7"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this); update()">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this); update()"> Delete</button></td></tr><tr><th colspan="6" style="height:50px">Colour</th><th colspan="8"   ><input oninput="update()" id="ty'+t+'"></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td contenteditable="true"  id="ty'+t+'s'+c+'">1/</td> <td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number"  onKeyPress="enter1(this)" onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td  ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter2(this)" onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter3(this)" onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td  ><input oninput="update()"  style="width:100%;text-align:center;"type="number"  onKeyPress="enter4(this)" onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter5(this)" onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter6(this)" onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter7(this)"  onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td   ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter8(this)" onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
             $("table tbody").append(item);
             
             c++;
@@ -5790,14 +5791,17 @@ calculateArea();
             c++;
             count=1;
         }
-    }
+    }*/
        function myfun(id){
           var x=id.id;
           x=x.split("-")[1];  
-          var rowid=$(id).closest('tr').index();    
+          var rowid=$(id).closest('tr').index();  
+
             var sno=document.getElementById("myTable").rows[rowid].cells[0].innerHTML;
-            sno++;
-          var markup = $('<tr id="row-'+c+'"><td contenteditable="true" id="ty'+t+'s'+c+'">'+sno+'</td> <td  ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td  ><input oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
+             sno.split("/");
+            var nsno = sno[0];
+            nsno++;
+          var markup = $('<tr id="row-'+c+'"><td contenteditable="true" id="ty'+t+'s'+c+'">'+nsno+'/</td> <td  ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td  ><input oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
               markup.insertBefore($('#myTable tbody tr:nth('+rowid+')'));
               c++;
         }
@@ -5812,7 +5816,7 @@ calculateArea();
           alert( "Canceled..!!");
         }
         areac();
-      }*/
+      }
 
     //======================E N D
 
@@ -6431,7 +6435,7 @@ var output1=' <form id="demo-form2" data-parsley-validate class="form-horizontal
 $("#x_con").append(output1);
 output+='<div class="x_title5"><h2 id="formp"> <!-- <small>different form elements</small> --></h2><div class="clearfix"></div></div><div class="x_content"><br /><div class="col-md-12 col-sm-12 col-xs-12 p0"><div class="x_panel"><div class="x_title"><h2>Measurement List </h2><select id="selecto" style="margin-left:20px"><option>'+con+'</option></select><div class="clearfix"></div></div><div class="x_content" id="tableapp"></div></div></div> <div class="ln_solid"></div><div class="form-group"> <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3" id="down"><button  class="btn btn-success" onclick="deleteRow()">Back</button><button  class="btn btn-success" onclick="copyRow()">Copy</button><button  class="btn btn-success" onclick="addRow()">Add</button> <button type="button" id="adds" class="btn btn-primary" onclick="addItem()">Add item</button><button onclick="submit()" class="btn btn-success">Submit</button><input oninput="update()" type="text" name="total" id="total"></div></div></div>';
 $("#x_pan").append(output);
-var output2='<table width="100%">';
+var output2='<table width="100%" id="myTable">';
 var type="";
 var data=[];
 var gh=final[11];
@@ -6467,7 +6471,7 @@ if(t==1){
         to=tot.split(":");
         var oi=to.length;
       var toti=to[oi-1];
-        output2+='<tr style="height:30px"><td id="tyt'+z+'"colspan="14">TOTAL:'+toti+'</td></tr><tr><th colspan="6" style="height:50px">Colour</th><th colspan="8" ><input oninput="update()" id="ty'+t+'"  value="'+all[0]+'"></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td contenteditable="true" id="ty'+t+'s'+c+'">'+all[12]+'</td> <td    ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter1(this)" onkeyup="areac()" id="ty'+t+'l'+c+'" value='+all[1]+'></td><th>X</th><td   ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter2(this)" onkeyup="areac()" id="ty'+t+'w'+c+'" value='+all[2]+'></td><td  ><input oninput="update()" style="width:100%;text-align:center;"type="number"  onKeyPress="enter3(this)" onkeyup="areac()" id="ty'+t+'l1-'+c+'" value='+all[3]+'></td><th>X</th><td   ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter4(this)" onkeyup="areac()" id="ty'+t+'w1-'+c+'" value='+all[4]+'></td><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter5(this)" onkeyup="areac()" id="ty'+t+'l2-'+c+'" value='+all[5]+'></td><th>X</th><td ><input  oninput="update()" style="width:100%;text-align:center;"type="number"  onKeyPress="enter6(this)"  onkeyup="areac()" id="ty'+t+'w2-'+c+'" value='+all[6]+'></td><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter7(this)"onkeyup="areac()" id="ty'+t+'l3-'+c+'" value='+all[7]+'></td><th>X</th><td  ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter8(this)" onkeyup="areac()" id="ty'+t+'w3-'+c+'" value='+all[8]+'></td><td id="ty'+t+'a'+c+'" >'+all[9]+'</td></tr>';
+        output2+='<tr style="height:30px"><td id="tyt'+z+'"colspan="7">TOTAL:'+toti+'</td><td colspan="7"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this); update()">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this); update()"> Delete</button></td></tr><tr><th colspan="6" style="height:50px">Colour</th><th colspan="8" ><input oninput="update()" id="ty'+t+'"  value="'+all[0]+'"></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td contenteditable="true" id="ty'+t+'s'+c+'">'+all[12]+'</td> <td    ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter1(this)" onkeyup="areac()" id="ty'+t+'l'+c+'" value='+all[1]+'></td><th>X</th><td   ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter2(this)" onkeyup="areac()" id="ty'+t+'w'+c+'" value='+all[2]+'></td><td  ><input oninput="update()" style="width:100%;text-align:center;"type="number"  onKeyPress="enter3(this)" onkeyup="areac()" id="ty'+t+'l1-'+c+'" value='+all[3]+'></td><th>X</th><td   ><input oninput="update()"  style="width:100%;text-align:center;"type="number" onKeyPress="enter4(this)" onkeyup="areac()" id="ty'+t+'w1-'+c+'" value='+all[4]+'></td><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter5(this)" onkeyup="areac()" id="ty'+t+'l2-'+c+'" value='+all[5]+'></td><th>X</th><td ><input  oninput="update()" style="width:100%;text-align:center;"type="number"  onKeyPress="enter6(this)"  onkeyup="areac()" id="ty'+t+'w2-'+c+'" value='+all[6]+'></td><td   ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter7(this)"onkeyup="areac()" id="ty'+t+'l3-'+c+'" value='+all[7]+'></td><th>X</th><td  ><input  oninput="update()" style="width:100%;text-align:center;"type="number" onKeyPress="enter8(this)" onkeyup="areac()" id="ty'+t+'w3-'+c+'" value='+all[8]+'></td><td id="ty'+t+'a'+c+'" >'+all[9]+'</td></tr>';
       }
       var tot=all[10];
           c++;
