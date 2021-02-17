@@ -26,12 +26,20 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    "url": "edit.html",
-    "revision": "9a8a8321d257dfd88ff5280721ae2179"
+    "url": "3optionfunc.js",
+    "revision": "338c67269246ed20ea19bc75aa0f7801"
   },
   {
     "url": "html2pdf.bundle.js",
     "revision": "4f85d6a7fa6987d4bbc14367630ea05d"
+  },
+  {
+    "url": "bootstrap.min.css",
+    "revision": "ec3bb52a00e176a7181d454dffaea219"
+  },
+  {
+    "url": "bootstrap.min.js",
+    "revision": "c5b5b2fa19bd66ff23211d9f844e0131"
   },
   {
     "url": "images/icons/icon-128x128.png",
@@ -78,19 +86,23 @@ self.__precacheManifest = [
     "revision": "fd76fc75e438a31c33a7f11d26984776"
   },
   {
+    "url": "index2.html",
+    "revision": "725e516d03f56dd98180cb0a02017c98"
+  },
+  {
+    "url": "jquery-2.2.4.min.js",
+    "revision": "2f6b11a7e914718e0290410e85366fe9"
+  },
+  {
     "url": "offline_bills.html",
     "revision": "50d101dbf92db2bf53c8806266b64420"
   },
   {
-    "url": "pdf1.html",
+    "url": "pdf2.html",
     "revision": "450da6f76d1f4a646cc8b96b2b1d1f5f"
   },
   {
-    "url": "practice.js",
-    "revision": "0d2022f698467ce471961ce8c93ac3eb"
-  },
-  {
-    "url": "reprint.html",
+    "url": "reprint1.html",
     "revision": "0f408671b84d6b5b0bca7b4841a67bd3"
   },
   {

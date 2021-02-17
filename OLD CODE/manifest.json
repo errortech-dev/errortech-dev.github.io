@@ -1,11 +1,11 @@
 {
-  "name": "Navakar",
+  "name": "Error",
   "short_name": "Navakar",
   "theme_color": "#f32121",
   "background_color": "#b7dfff",
   "display": "standalone",
-  "Scope": "/",
-  "start_url": "/",
+  "start_url": "./",
+  "Scope": ".",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
